@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Donation</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Custom CSS for navbar and other styling */
+        .navbar-brand {
+            font-weight: bold;
+        }
+
+        .navbar-nav {
+            margin-left: auto; /* Align items to the right */
+        }
+
+        body {
+            padding-top: 70px; /* Adjust for navbar height */
+        }
+
+        .jumbotron {
+            background-color: #e6e6e6; /* Light gray background */
+            padding: 4rem 2rem;
+            margin-bottom: 2rem;
+            border-radius: .3rem;
+        }
+
+        .jumbotron h1 {
+            font-weight: 700;
+        }
+
+        /* Style the row content */
+        .row-content {
+            padding: 2rem 0; /* Add some vertical padding */
+        }
+
+        .row-content h2 {
+            margin-bottom: 1rem; /* Space below the heading */
+        }
+
+        .contact-info { /* Style the contact info specifically */
+            margin-top: 1rem; /* Add some top margin */
+        }
+        .row-content {
+            padding: 2rem 0;
+        }
+
+        .row-content h2 {
+            margin-bottom: 1rem;
+        }
+
+        .contact-info {
+            padding: 1rem; /* Add padding around contact info */
+            background-color: #e6e6e6; /* Add light gray background */
+            border-radius: 5px; /* Add rounded corners (optional) */
+        }
+
+        /* Add margin between the two sections */
+        .col-md-6:nth-child(2) { /* Target the second col-md-6 (Contact Us) */
+            margin-top: 2rem; /* Add top margin */
+        }
+        
+        /* Media query for smaller screens to remove the top margin */
+        @media (max-width: 767px) { /* Adjust breakpoint as needed */
+            .col-md-6:nth-child(2) {
+                margin-top: 0; /* Remove top margin on smaller screens */
+                 /* Add padding top to separate the sections */
+            }
+        }
+        .col-md-6-contact{
+            padding: 10px;
+            margin-top: 150px;
+            background-color: #e6e6e6;
+            width: 100%;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Blood Donation Project</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="donate.html">Donate</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="needed.html">Request</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="register.html">Register</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="jumbotron">
+            <h1 class="display-4">Give the Gift of Life</h1>
+            <p class="lead">Blood donation is a selfless act that saves lives. Every two seconds, someone needs blood. Your
+                donation can make a difference.</p>
+            <hr class="my-4">
+            <p>Donating blood is safe, simple, and helps people in need. Join us in making a positive impact on our
+                community.</p>
+            <a class="btn btn-primary btn-lg" href="register.html" role="button">Register Now</a>
+        </div>
+
+        <div class="container">
+            <div class="row row-content">
+                <div class="col-md-6">
+                    <h2>Why Donate Blood?</h2>
+                    <p>Blood is essential for life. It cannot be manufactured, so donations are crucial. Donated blood helps
+                        patients undergoing surgery, cancer treatment, organ transplants, and those with blood disorders or
+                        injuries.</p>
+                </div>
+                <div class="col-md-6">  </div> <div class="col-md-6-contact">
+                    <h2>Contact Us</h2>
+                    <p class="contact-info">
+                        123 Main Street<br>
+                        Anytown, CA 12345<br>
+                        Phone: (555) 555-5555<br>
+                        Email: info@blooddonation.com
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

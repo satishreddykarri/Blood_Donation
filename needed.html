@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request Blood</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            padding-top: 70px;
+            font-family: Arial, sans-serif;
+        }
+        .request-section {
+            text-align: center;
+            padding: 60px 20px;
+            background: linear-gradient(to right, #ff416c, #ff4b2b);
+            color: white;
+        }
+        .request-content {
+            max-width: 900px;
+            margin: auto;
+            line-height: 1.8;
+        }
+        .form-section {
+            padding: 50px 20px;
+            background-color: #f8f9fa;
+        }
+        .form-container {
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Blood Donation Project</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"> <a class="nav-link" href="index.html">Home</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="donate.html">Donate</a> </li>
+                    <li class="nav-item active"> <a class="nav-link" href="needed.html">Request</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="about.html">About Us</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="register.html">Register</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="login.html">Login</a> </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="request-section">
+        <div class="request-content">
+            <h2>Request Blood</h2>
+            <p>If you or a loved one needs blood, submit your request here and our donors will be notified.</p>
+        </div>
+    </div>
+
+    <div class="form-section">
+        <div class="form-container">
+            <h3 class="text-center">Blood Request Form</h3>
+            <form action="needed.php" method="post">
+                <div class="form-group">
+                    <label for="patientName">Patient Name</label>
+                    <input type="text" class="form-control" id="patientName" name="patientName" required>
+                </div>
+                <div class="form-group">
+                    <label for="hospital">Hospital Name</label>
+                    <input type="text" class="form-control" id="hospital" name="hospital" required>
+                </div>
+                <div class="form-group">
+                    <label for="bloodGroup">Required Blood Group</label>
+                    <select class="form-control" id="bloodGroup" name="bloodGroup" required>
+                        <option>A+</option>
+                        <option>A-</option>
+                        <option>B+</option>
+                        <option>B-</option>
+                        <option>O+</option>
+                        <option>O-</option>
+                        <option>AB+</option>
+                        <option>AB-</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="contact">Contact Number</label>
+                    <input type="tel" class="form-control" id="contact" name="contact" required>
+                </div>
+                <button type="submit" class="btn btn-danger btn-block">Submit Request</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
